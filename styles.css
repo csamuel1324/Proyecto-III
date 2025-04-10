@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #fbfbfb, #031da2); 
+    color: white;
+    position: relative; 
+    overflow: hidden; 
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('ula-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 27%;
+    opacity: 1; 
+    z-index: 0; 
+    filter: blur(1px); 
+}
+
+.container {
+    position: relative;
+    z-index: 1; 
+    text-align: center;
+}
+
+.login-box {
+    background: rgba(0, 0, 0, 0.923); 
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.header-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.header-title span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: block;
+    width: 200px;
+    padding: 12px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+.admin-btn {
+    background: linear-gradient(to right, #007BFf, #0056b3);
+}
+
+.user-btn {
+    background: linear-gradient(to right, #0056b3, #2575fc);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
