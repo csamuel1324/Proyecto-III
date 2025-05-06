@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario ULA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra superior -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="nav-left">
+                <img src="{{ url_for('static', filename='img/ulalogo2.png') }}" alt="Logo de la Organización" class="org-logo">
+                <a class="nav-link" href="{{ url_for('main.index' ) }}">Inicio</a>
+                <a href="Reseña.html" class="nav-link">Reseña</a>
+                <a href="Desarrolladores.html" class="nav-link">Desarrolladores</a>
+            </div>
+            <div class="nav-right">
+                <a class="nav-btn" href="{{ url_for('main.usuario' ) }}">Usuario</a>
+                <a class="nav-btn" href="{{ url_for('main.administrador' ) }}">Administrador</a>
+                <!-- <button class="nav-btn" onclick="window.location.href='usuario.html';">Usuario</button> -->
+                <!-- <button class="nav-btn" onclick="window.location.href='administrador.html';">Administrador</button> -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Indicaciones de bienvenida -->
+    <div class="container">
+        <h1 class="header-title">Bienvenido al Control de Inventario</h1>
+        <h2 class="sub-title">ULA - NURR</h2>
+        <p class="description">Por favor, utilice los enlaces de navegación en la parte superior para acceder como Usuario o Administrador.</p>
+    </div>
+</body>
+</html>
+
+
+
+       
+
+
+
+
+
+
+
+
+         
+
+
+
+
+
